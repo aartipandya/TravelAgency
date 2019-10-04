@@ -1,92 +1,158 @@
 <!doctype html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      
-    <title>Home</title>
-  </head>
-  <body>
 
-      <nav class="navbar navbar-light bg-light">
-          
-        
+<head>
+		
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>Home</title>
+	<style> 
+	body {
+		 background-image:  url("London.jpg");
+		 background-size: cover; 
+		 }
+		 .container{
+			 background-color: rgba(255,255,255,.7)
+		 }
+	</style>
+</head>
 
-          <ul class="nav navbar-nav ml-auto">
+<body>
 
-            
+	<nav class="navbar navbar-light bg-light">
+		<ul class="nav navbar-nav ml-auto">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">About Us</button>
+		</ul>
+	</nav>
+	<div class="container">
+		<h2> <b> <p class="text-success">WELCOME TO MAKE MY TRIP </p> </b> </h2>
+		
+		<h2> <i> Enter the following details to continue :- </i></h2>
+		<form action="/action_page.php">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="name" class="form-control" placeholder="Enter your Full Name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+			</div>
+			<h5> Select the place you want to visit :- </h5>
+			<div class="container">
+				<div class="dropdown">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Select</button>
+					<div class="dropdown-menu"> <a class="dropdown-item" href="#"> London</a>
+						<a class="dropdown-item" href="#"> Paris</a>
+						<a class="dropdown-item-text" href="#">USA</a>
+						<a class="dropdown-item-text" href="#">Canada</a>
+				
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="remember">Remember me</label>
+			</div>
+			<button type="button" class="btn btn-outline-success">Submit</button>
+		</form>&nbsp;
+		<h2> <i> <p class="text-primary">Join us and let us help to plan your Holiday </p> </i> </h2>
+		<h3>Explore the World </h3>
+		<div class="row">
+			<div class="column">
+				<img class="img-responsive" src="London.jpg" width="200" height="140">
+			</div>&nbsp; &nbsp;
+			<div class="column">
+				<img class="img-responsive" src="Paris.jpg" width="200" height="140">
+			</div>&nbsp; &nbsp;
+			<div class="column">
+				<img class="img-responsive" src="USA.jpg" width="200" height="140">
+			</div>&nbsp; &nbsp;
+			<div class="column">
+				<img class="img-responsive" src="Canada.jpg" width="200" height="140">
+			</div>
+		</div>
+		<!--Section: Contact v.2-->
+		<section class="mb-4">
+			<!--Section heading-->
+			<h2 class="h1-responsive font-weight-bold text-center my-4"><p class="text-info">Contact us</p></h2>
+			<!--Section description-->
+			<p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+			<div class="row">
+				<!--Grid column-->
+				<div class="col-md-9 mb-md-0 mb-5">
+					<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+						<!--Grid row-->
+						<div class="row">
+							<!--Grid column-->
+							<div class="col-md-6">
+								<div class="md-form mb-0">
+									<input type="text" id="name" name="name" class="form-control">
+									<label for="name" class="">Your name</label>
+								</div>
+							</div>
+							<!--Grid column-->
+							<!--Grid column-->
+							<div class="col-md-6">
+								<div class="md-form mb-0">
+									<input type="text" id="email" name="email" class="form-control">
+									<label for="email" class="">Your email</label>
+								</div>
+							</div>
+							<!--Grid column-->
+						</div>
+						<!--Grid row-->
+						<!--Grid row-->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="md-form mb-0">
+									<input type="text" id="subject" name="subject" class="form-control">
+									<label for="subject" class="">Subject</label>
+								</div>
+							</div>
+						</div>
+						<!--Grid row-->
+						<!--Grid row-->
+						<div class="row">
+							<!--Grid column-->
+							<div class="col-md-12">
+								<div class="md-form">
+									<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+									<label for="message">Your message</label>
+								</div>
+							</div>
+						</div>
+						<!--Grid row-->
+					</form>
+					<div class="text-center text-md-left"> <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+					</div>
+					<div class="status"></div>
+				</div>
+				<!--Grid column-->
+				<!--Grid column-->
+				<div class="col-md-3 text-center">
+					<ul class="list-unstyled mb-0">
+						<li><i class="fas fa-map-marker-alt fa-2x"></i>
+							<p>Travel Agency, Windsor</p>
+						</li>
+						<li><i class="fas fa-phone mt-4 fa-2x"></i>
+							<p>+ 01 234 567 890</p>
+						</li>
+						<li><i class="fas fa-envelope mt-4 fa-2x"></i>
+							<p>travelagency@gmail.com</p>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+			</div>
+		</section>
+	</div>
+	<!--Section: Contact v.2-->
+</body>
 
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">About Us</button>
-              </ul>
-      
-        </nav>
-    <div class="container">
-        
-    <h2> <b> WELCOME TO MAKE MY TRIP </b> </h2>
-  <h2> <i> Enter the following details to continue :- </i></h2>
-
-  
-      <form action="/action_page.php">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="name" class="form-control"  placeholder="Enter your Full Name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-        </div>
-        <h5> Select the place you want to visit :- </h5>
-        <div class="container">
-         <div class="dropdown">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Select
-                
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"> London</a>
-                <a class="dropdown-item" href="#"> Paris</a>
-                <a class="dropdown-item-text" href="#">USA</a>
-                <a class="dropdown-item-text" href="#">Canada</a>
-                <span class="dropdown-item-text">Just Text</span>
-              </div>
-            </div>
-          </div>
-      
-        <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
-        <button type="button" class="btn btn-outline-success">Submit</button>
-      </form>
-    
-  
-  
-    &nbsp; <h2> <i>Join us and let us help to plan your Holiday </i> </h2>
-
-        <h3>Explore the World </h3>
-        <div class="row">
-            <div class="column">
-        <img class="img-responsive" src="London.jpg" width="200" height="140"> 
-        </div>
-        &nbsp; &nbsp;
-        <div class="column">
-        <img class="img-responsive" src="Paris.jpg" width="200" height="140">
-        </div>
-        &nbsp; &nbsp;
-        <div class="column">
-        <img class="img-responsive" src="USA.jpg" width="200" height="140">
-      </div>
-      &nbsp; &nbsp;
-        <div class="column">
-        <img class="img-responsive" src="Canada.jpg" width="200" height="140">
-      </div>
-      </div>
-    </div>
-</div>
-
-  </body>
 </html>
