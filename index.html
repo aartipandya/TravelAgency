@@ -32,14 +32,16 @@
 		<h2> <b> <p class="text-success">WELCOME TO MAKE MY TRIP </p> </b> </h2>
 		
 		<h2> <i> Enter the following details to continue :- </i></h2>
-		<form action="/action_page.php">
+		<form action="/welcome.html">
 			<div class="form-group">
+
 				<label for="name">Name:</label>
-				<input type="name" class="form-control" placeholder="Enter your Full Name" name="name">
+
+				<input type="name" class="form-control" placeholder="Enter your Full Name" name="name" maxlength="25" required> 
 				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" maxlength="25" required>
 			</div>
-			<h5> Select the place you want to visit :- </h5>
+			<h6> Select the place you want to visit :- </h6>
 			<div class="container">
 				<div class="dropdown">
 					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Select</button>
@@ -53,16 +55,16 @@
 			</div>
 			<div class="form-group">
 				<label for="pwd">Password:</label>
-				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" maxlength="25" required>
 			</div>
 			<div class="checkbox">
 				<label>
 					<input type="checkbox" name="remember">Remember me</label>
 			</div>
-			<button type="button" class="btn btn-outline-success">Submit</button>
-		</form>&nbsp;
-		<h2> <i> <p class="text-primary">Join us and let us help to plan your Holiday </p> </i> </h2>
-		<h3>Explore the World </h3>
+			  <button type="submit">Submit</button>
+            </form>&nbsp;
+		<h2>  <p class="text-primary"> <b>Join us and let us help to plan your Holiday </b></p> </h2>
+		<h3><i>Explore the World </i> </h3>
 		<div class="row">
 			<div class="column">
 				<img class="img-responsive" src="London.jpg" width="200" height="140">
@@ -80,7 +82,7 @@
 		<!--Section: Contact v.2-->
 		<section class="mb-4">
 			<!--Section heading-->
-			<h2 class="h1-responsive font-weight-bold text-center my-4"><p class="text-info">Contact us</p></h2>
+			<h2 class="h1-responsive font-weight-bold text-center my-4"><p class="text-info">CONTACT US</p></h2>
 			<!--Section description-->
 			<p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
 			<div class="row">
@@ -93,16 +95,19 @@
 							<!--Grid column-->
 							<div class="col-md-6">
 								<div class="md-form mb-0">
-									<input type="text" id="name" name="name" class="form-control">
-									<label for="name" class="">Your name</label>
+									<label for="name" class="">Name</label>
+									<input type="text" id="name" name="name" class="form-control" placeholder="Enter your Full Name">
+								
+							
 								</div>
 							</div>
 							<!--Grid column-->
 							<!--Grid column-->
 							<div class="col-md-6">
 								<div class="md-form mb-0">
-									<input type="text" id="email" name="email" class="form-control">
-									<label for="email" class="">Your email</label>
+									<label for="email" class="">Your Email</label>
+									<input type="text" id="email" name="email" class="form-control" placeholder="Enter your Email">
+									
 								</div>
 							</div>
 							<!--Grid column-->
@@ -112,8 +117,9 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="md-form mb-0">
-									<input type="text" id="subject" name="subject" class="form-control">
 									<label for="subject" class="">Subject</label>
+									<input type="text" id="subject" name="subject" class="form-control" placeholder="Enter Subject">
+							
 								</div>
 							</div>
 						</div>
@@ -123,15 +129,19 @@
 							<!--Grid column-->
 							<div class="col-md-12">
 								<div class="md-form">
-									<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
 									<label for="message">Your message</label>
+									<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"  placeholder="Enter your message"></textarea>
+									
 								</div>
 							</div>
 						</div>
 						<!--Grid row-->
 					</form>
 					<div class="text-center text-md-left"> <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+						
 					</div>
+				
+			
 					<div class="status"></div>
 				</div>
 				<!--Grid column-->
